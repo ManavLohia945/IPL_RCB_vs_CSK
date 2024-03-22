@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL</title>
+    <style>
+
+        body {
+        background-image: url("images/image_1.png"); /* Replace "images/image1.png" with the path to your image */
+        background-size: cover;
+        /* background-position: center; */
+        height: 1000vh; /* Ensures the background covers the entire viewport height */
+        margin: 0; /* Removes any default margin */
+        }
+
+        .div {
+          border-radius: 20px;
+          box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15),
+            2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          background-color: #f8f8f8;
+          display: flex;
+          flex-direction: column;
+          align-self: stretch;
+          align-items: center;
+          font-size: 24px;
+          color: #3f3f3f;
+          font-weight: 500;
+          line-height: 83%;
+          width: 100%;
+          margin: auto 0;
+          padding: 37px 24px;
+        }
+        @media (max-width: 991px) {
+          .div {
+            margin-top: 40px;
+            padding: 0 20px;
+          }
+        }
+        .img {
+          aspect-ratio: 1.39;
+          object-fit: auto;
+          object-position: center;
+          width: 214px;
+          max-width: 100%;
+        }
+        .div-2 {
+          color: #696969;
+          font-family: Inter, sans-serif;
+          font-weight: 700;
+          margin-top: 23px;
+        }
+        .div-3 {
+          border-color: rgba(109, 109, 109, 1);
+          border-style: solid;
+          border-width: 2px;
+          background-color: #6d6d6d;
+          align-self: stretch;
+          margin-top: 14px;
+          height: 2px;
+        }
+        .div-4 {
+          font-family: Inter, sans-serif;
+          margin-top: 22px;
+        }
+        .div-5 {
+          font-family: Inter, sans-serif;
+          margin-top: 22px;
+        }
+        .div-6 {
+          font-family: Inter, sans-serif;
+          margin-top: 22px;
+        }
+        .div-7 {
+          font-family: Inter, sans-serif;
+          margin-top: 17px;
+        }
+        .div-8 {
+          font-family: Inter, sans-serif;
+          margin-top: 22px;
+        }
+        .div-9 {
+          font-family: Inter, sans-serif;
+          margin-top: 22px;
+        }
+        .div-10 {
+          font-family: Inter, sans-serif;
+          margin-top: 22px;
+        }
+        .div-11 {
+          font-family: Inter, sans-serif;
+          margin-top: 17px;
+        }
+        .div-12 {
+          font-family: Inter, sans-serif;
+          margin-top: 18px;
+        }
+        .div-13 {
+          font-family: Inter, sans-serif;
+          margin-top: 22px;
+        }
+        .div-14 {
+          font-family: Inter, sans-serif;
+          margin-top: 22px;
+        }
+
+        .div_1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 30px;
+          color: #fff;
+          font-weight: 700;
+          line-height: 67%;
+        }
+        @media (max-width: 991px) {
+          .div_1 {
+            max-width: 100%;
+            margin-top: 40px;
+          }
+        }
+        .img_1 {
+          aspect-ratio: 1.64;
+          object-fit: auto;
+          object-position: center;
+          width: 189px;
+          max-width: 100%;
+        }
+        .div-2_1 {
+          font-family: Inter, sans-serif;
+          margin-top: 17px;
+        }
+        .div-3_1 {
+          font-family: Inter, sans-serif;
+          font-weight: 600;
+          align-self: stretch;
+          margin: 38px 29px 0;
+        }
+        @media (max-width: 991px) {
+          .div-3_1 {
+            margin: 0 10px;
+          }
+        }
+        .div-4_1 {
+          font-family: Inter, sans-serif;
+          font-weight: 600;
+          margin-top: 20px;
+        }
+        .div-5_1 {
+          margin-top: 41px;
+          font: 400 80px/25% Impact, sans-serif;
+        }
+        @media (max-width: 991px) {
+          .div-5_1 {
+            margin-top: 40px;
+            font-size: 40px;
+          }
+        }
+        .div-6_1 {
+          justify-content: center;
+          border-radius: 69px;
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+          background-color: #467ce5;
+          align-self: stretch;
+          margin-top: 64px;
+          color: var(--white, #fff);
+          padding: 24px 60px;
+          font: 26px/92% Inter, sans-serif;
+        }
+        @media (max-width: 991px) {
+          .div-6_1 {
+            max-width: 100%;
+            margin-top: 40px;
+            padding: 0 20px 0 22px;
+          }
+        }
+
+        /* CSK TEAM CSS  */
+        .div_2 {
+            border-radius: 20px;
+            box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15),
+            2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            background-color: #f8f8f8;
+            display: flex;
+            margin-top: 86px;
+            flex-direction: column;
+            align-items: center;
+            font-size: 24px;
+            color: #3f3f3f;
+            font-weight: 500;
+            line-height: 83%;
+            width: 100%;
+            padding: 10px 17px 49px;
+        }
+        @media (max-width: 991px) {
+            .div_2 {
+            margin-top: 40px;
+            padding-right: 20px;
+            }
+        }
+        .img_2 {
+            aspect-ratio: 1.52;
+            object-fit: auto;
+            object-position: center;
+            width: 100%;
+            align-self: stretch;
+        }
+        .div-2_2 {
+            color: #696969;
+            font-family: Inter, sans-serif;
+            font-weight: 700;
+            margin-top: 17px;
+        }
+        .div-3_2 {
+            border-color: rgba(109, 109, 109, 1);
+            border-style: solid;
+            border-width: 2px;
+            background-color: #6d6d6d;
+            align-self: stretch;
+            margin-top: 14px;
+            height: 2px;
+        }
+        .div-4_2 {
+            font-family: Inter, sans-serif;
+            margin-top: 22px;
+        }
+        .div-5_2 {
+            font-family: Inter, sans-serif;
+            margin-top: 17px;
+        }
+        .div-6_2 {
+            font-family: Inter, sans-serif;
+            margin-top: 17px;
+        }
+        .div-7_2 {
+            font-family: Inter, sans-serif;
+            margin-top: 17px;
+        }
+        .div-8_2 {
+            font-family: Inter, sans-serif;
+            margin-top: 22px;
+        }
+        .div-9_2 {
+            font-family: Inter, sans-serif;
+            margin-top: 22px;
+        }
+        .div-10_2 {
+            font-family: Inter, sans-serif;
+            margin-top: 22px;
+        }
+        .div-11_2 {
+            font-family: Inter, sans-serif;
+            margin-top: 17px;
+        }
+        .div-12_2 {
+            font-family: Inter, sans-serif;
+            margin-top: 17px;
+        }
+        .div-13_2 {
+            font-family: Inter, sans-serif;
+            margin-top: 22px;
+        }
+        .div-14_2 {
+            font-family: Inter, sans-serif;
+            margin-top: 17px;
+        }
+
+
+      </style>
+</head>
+<body>
+        <!-- MI TEAM SQUAD -->
+        <div class="div">
+        <img
+          loading="lazy"
+          srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/242641def544222d110c9dcb76234a6a146adcb380dbe76b394722e20773d17d?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/242641def544222d110c9dcb76234a6a146adcb380dbe76b394722e20773d17d?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/242641def544222d110c9dcb76234a6a146adcb380dbe76b394722e20773d17d?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/242641def544222d110c9dcb76234a6a146adcb380dbe76b394722e20773d17d?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/242641def544222d110c9dcb76234a6a146adcb380dbe76b394722e20773d17d?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/242641def544222d110c9dcb76234a6a146adcb380dbe76b394722e20773d17d?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/242641def544222d110c9dcb76234a6a146adcb380dbe76b394722e20773d17d?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/242641def544222d110c9dcb76234a6a146adcb380dbe76b394722e20773d17d?apiKey=f572a0984ce441fd8cb429ec4be01f99&"
+          class="img"
+        />
+        <div class="div-2">Official Playing 11</div>
+        <div class="div-3"></div>
+        <div class="div-4">Rohit Sharma</div>
+        <div class="div-5">Ishan Kishan</div>
+        <div class="div-6">Suryakumar Yadav</div>
+        <div class="div-7">Tim David</div>
+        <div class="div-8">Tilak Varma</div>
+        <div class="div-9">Dewald Brevis</div>
+        <div class="div-10">Hardik Pandya</div>
+        <div class="div-11">Kumar Kartikeya</div>
+        <div class="div-12">Akash Madhwal</div>
+        <div class="div-13">Jason Behrendorff</div>
+        <div class="div-14">Jasprit Bumrah</div>
+        </div>
+
+
+        <!-- MI VS CSK LOGO  -->
+        <div class="div_1">
+        <img
+          loading="lazy"
+          srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/1950fac2a2d53182c614ee31f0ca78d41e96071956aa485d48b92e7cad64b561?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/1950fac2a2d53182c614ee31f0ca78d41e96071956aa485d48b92e7cad64b561?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1950fac2a2d53182c614ee31f0ca78d41e96071956aa485d48b92e7cad64b561?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/1950fac2a2d53182c614ee31f0ca78d41e96071956aa485d48b92e7cad64b561?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/1950fac2a2d53182c614ee31f0ca78d41e96071956aa485d48b92e7cad64b561?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1950fac2a2d53182c614ee31f0ca78d41e96071956aa485d48b92e7cad64b561?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/1950fac2a2d53182c614ee31f0ca78d41e96071956aa485d48b92e7cad64b561?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/1950fac2a2d53182c614ee31f0ca78d41e96071956aa485d48b92e7cad64b561?apiKey=f572a0984ce441fd8cb429ec4be01f99&"
+          class="img_1"
+        />
+        <div class="div-2_1">Match No. 34</div>
+        <div class="div-3_1">Venue: Wankhede Stafium</div>
+        <div class="div-4_1">Toss: Mumbai Indians</div>
+        <div class="div-5_1">VS</div>
+        <div class="div-6_1">Generate Best 11 players</div>
+        </div>
+
+        <!-- CSK TEAM SQUAD -->
+        <div class="div_2">
+            <img
+              loading="lazy"
+              srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/6179071034c8664beed9ed3fcd8c4a9c49eafa70c89dd838a4e7d8de8031583d?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/6179071034c8664beed9ed3fcd8c4a9c49eafa70c89dd838a4e7d8de8031583d?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6179071034c8664beed9ed3fcd8c4a9c49eafa70c89dd838a4e7d8de8031583d?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/6179071034c8664beed9ed3fcd8c4a9c49eafa70c89dd838a4e7d8de8031583d?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/6179071034c8664beed9ed3fcd8c4a9c49eafa70c89dd838a4e7d8de8031583d?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6179071034c8664beed9ed3fcd8c4a9c49eafa70c89dd838a4e7d8de8031583d?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/6179071034c8664beed9ed3fcd8c4a9c49eafa70c89dd838a4e7d8de8031583d?apiKey=f572a0984ce441fd8cb429ec4be01f99&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/6179071034c8664beed9ed3fcd8c4a9c49eafa70c89dd838a4e7d8de8031583d?apiKey=f572a0984ce441fd8cb429ec4be01f99&"
+              class="img_2"
+            />
+            <div class="div-2_2">Official Playing 11</div>
+            <div class="div-3_2"></div>
+            <div class="div-4_2">Devon Conway</div>
+            <div class="div-5_2">Ruturaj Gaikwad</div>
+            <div class="div-6_2">Ajinkya Rahane</div>
+            <div class="div-7_2">Shivam Dube</div>
+            <div class="div-8_2">Moeen Ali</div>
+            <div class="div-9_2">MS Dhoni</div>
+            <div class="div-10_2">Ravindra Jadeja</div>
+            <div class="div-11_2">Daryl Mitchell</div>
+            <div class="div-12_2">Rachin Ravindra</div>
+            <div class="div-13_2">Deepak Chahar</div>
+            <div class="div-14_2">Shardul Thakur</div>
+          </div>
+      
+</body>
+</html>
+  

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPL MATCH</title>
+  <style>
+    .official-playing-11 {
+      border-radius: 20px;
+      box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15), 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 24px;
+      color: #3f3f3f;
+      font-weight: 500;
+      line-height: 83%;
+      width: 100%;
+      margin: auto 0;
+      padding: 37px 24px;
+    }
+    
+    @media (max-width: 991px) {
+      .official-playing-11 {
+        margin-top: 40px;
+        padding: 0 20px;
+      }
+    }
+    
+    .team-logo {
+      aspect-ratio: 1.39;
+      object-fit: auto;
+      object-position: center;
+      width: 214px;
+      max-width: 100%;
+    }
+    
+    .section-title {
+      color: #696969;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      margin-top: 23px;
+    }
+    
+    .divider {
+      border-color: rgba(109, 109, 109, 1);
+      border-style: solid;
+      border-width: 2px;
+      background-color: #6d6d6d;
+      align-self: stretch;
+      margin-top: 14px;
+      height: 2px;
+    }
+    
+    .player-name {
+      font-family: Inter, sans-serif;
+      margin-top: 22px;
+    }
+    
+    .player-name.captain {
+      margin-top: 17px;
+    }
+    
+    .player-name.bowler {
+      margin-top: 18px;
+    }
+
+    /* MATCH DETAILS CSS */
+    
+    .match-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 30px;
+      color: #fff;
+      font-weight: 700;
+      line-height: 67%;
+    }
+  
+    @media (max-width: 991px) {
+      .match-details {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+  
+    .team-logos {
+      aspect-ratio: 1.64;
+      object-fit: auto;
+      object-position: center;
+      width: 189px;
+      max-width: 100%;
+      alt: "Team logos of Mumbai Indians and Chennai Super Kings";
+    }
+  
+    .match-number {
+      font-family: Inter, sans-serif;
+      margin-top: 17px;
+    }
+  
+    .match-venue {
+      font-family: Inter, sans-serif;
+      font-weight: 600;
+      align-self: stretch;
+      margin: 38px 29px 0;
+    }
+  
+    @media (max-width: 991px) {
+      .match-venue {
+        margin: 0 10px;
+      }
+    }
+  
+    .toss-winner {
+      font-family: Inter, sans-serif;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+  
+    .vs-text {
+      margin-top: 41px;
+      font: 400 80px/25% Impact, sans-serif;
+    }
+  
+    @media (max-width: 991px) {
+      .vs-text {
+        margin-top: 40px;
+        font-size: 40px;
+      }
+    }
+  
+    .generate-button {
+      justify-content: center;
+      border-radius: 69px;
+      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+      background-color: #467ce5;
+      align-self: stretch;
+      margin-top: 64px;
+      color: #fff;
+      padding: 24px 60px;
+      font: 26px/92% Inter, sans-serif;
+    }
+  
+    @media (max-width: 991px) {
+      .generate-button {
+        max-width: 100%;
+        margin-top: 40px;
+        padding: 0 20px 0 22px;
+      }
+    }
+
+    .official-playing-11 {
+      border-radius: 20px;
+      box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15), 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 24px;
+      color: #3f3f3f;
+      font-weight: 500;
+      line-height: 83%;
+      width: 100%;
+      margin-top: 86px;
+      padding: 10px 17px 49px;
+    }
+  
+    @media (max-width: 991px) {
+      .official-playing-11 {
+        margin-top: 40px;
+        padding-right: 20px;
+      }
+    }
+  
+    .team-image {
+      width: 100%;
+      align-self: stretch;
+      aspect-ratio: 1.52;
+      object-fit: auto;
+      object-position: center;
+    }
+  
+    .section-title {
+      color: #696969;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      margin-top: 17px;
+    }
+  
+    .divider {
+      border: 2px solid rgba(109, 109, 109, 1);
+      background-color: #6d6d6d;
+      align-self: stretch;
+      margin-top: 14px;
+      height: 2px;
+    }
+  
+    .player-name {
+      font-family: Inter, sans-serif;
+      margin-top: 17px;
+    }
+  
+    .player-name.first {
+      margin-top: 22px;
+    }
+
+    </style>
+</head>
+<body>
+  <section class="official-playing-11">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/242641def544222d110c9dcb76234a6a146adcb380dbe76b394722e20773d17d?apiKey=f572a0984ce441fd8cb429ec4be01f99&" alt="Team Logo" class="team-logo" />
+    <h2 class="section-title">Official Playing 11</h2>
+    <div class="divider"></div>
+    <p class="player-name">Rohit Sharma</p>
+    <p class="player-name">Ishan Kishan</p>
+    <p class="player-name">Suryakumar Yadav</p>
+    <p class="player-name captain">Tim David</p>
+    <p class="player-name">Tilak Varma</p>
+    <p class="player-name">Dewald Brevis</p>
+    <p class="player-name">Hardik Pandya</p>
+    <p class="player-name bowler">Kumar Kartikeya</p>
+    <p class="player-name bowler">Akash Madhwal</p>
+    <p class="player-name">Jason Behrendorff</p>
+    <p class="player-name">Jasprit Bumrah</p>
+  </section>
+  
+  <main class="match-details">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1950fac2a2d53182c614ee31f0ca78d41e96071956aa485d48b92e7cad64b561?apiKey=f572a0984ce441fd8cb429ec4be01f99&" class="team-logos" alt="Team logos of Mumbai Indians and Chennai Super Kings" />
+    <h2 class="match-number">Match No. 34</h2>
+    <p class="match-venue">Venue: Wankhede Stafium</p>
+    <p class="toss-winner">Toss: Mumbai Indians</p>
+    <p class="vs-text">VS</p>
+    <button class="generate-button">Generate Best 11 players</button>
+  </main>
+
+  
+  
+  <section class="official-playing-11">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6179071034c8664beed9ed3fcd8c4a9c49eafa70c89dd838a4e7d8de8031583d?apiKey=f572a0984ce441fd8cb429ec4be01f99&" alt="Team playing 11" class="team-image" />
+    <h2 class="section-title">Official Playing 11</h2>
+    <div class="divider" aria-hidden="true"></div>
+    <p class="player-name first">Devon Conway</p>
+    <p class="player-name">Ruturaj Gaikwad</p>
+    <p class="player-name">Ajinkya Rahane</p>
+    <p class="player-name">Shivam Dube</p>
+    <p class="player-name first">Moeen Ali</p>
+    <p class="player-name first">MS Dhoni</p>
+    <p class="player-name first">Ravindra Jadeja</p>
+    <p class="player-name">Daryl Mitchell</p>
+    <p class="player-name">Rachin Ravindra</p>
+    <p class="player-name first">Deepak Chahar</p>
+    <p class="player-name">Shardul Thakur</p>
+  </section>
+
+</body>
+</html>
+
+
+    
+   

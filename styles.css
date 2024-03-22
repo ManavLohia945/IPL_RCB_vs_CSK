@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height for full viewport coverage */
+    /* background-color: #f2f2f2; */
+    position: relative;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place the background image behind the content */
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px; /* Adjust padding for better spacing */
+  }
+  
+  /* Header Styles */
+  
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .ipl-logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .match-info span {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+
+  .match-number{
+    margin-top: 20px;
+    margin-left:28%;
+    margin-bottom: 25px;
+
+    font-family: Inter;
+    font-size: 30px;
+    line-height: 0.67;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .venue{
+    /* margin-left: 25px; */
+    /* margin-right: 50px; */
+    margin-left:10px;
+    font-family: Inter;
+    font-size: 30px;
+    line-height: 0.67;
+    color: #ffffff;
+    font-weight: undefined;
+  }
+  
+  /* Match Details Styles */
+  
+  .match-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .toss {
+    /* font-size: 16px; */
+    margin-bottom: 10px; /* Add some margin for spacing */
+    margin-left: 2x;
+    font-family: Inter;
+    font-size: 30px;
+    line-height: 0.67;
+    color: #ffffff;
+    font-weight: undefined;
+  }
+  
+  /* Teams Styles */
+
+  .button_between{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .teams {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-bottom: 20px; /* Add margin for spacing between sections */
+    font-family: Inter;
+    font-size: 24px;
+    line-height: 0.83;
+    color: #696969;
+    font-weight: 700;
+    border-radius: 20px;
+    /* padding: 10%; */
+
+    /* background-color: #f8f8f8; */
+    /* width: 314px; */
+    /* height: 735px; */
+  }
+
+  .teams-container {
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;  /* Center elements horizontally */
+    justify-content: space-between; /* Distribute content with spacing */
+    /* border-radius: 20px; */
+  }
+  
+  
+  .team {
+    text-align: center;
+    align-items: center;
+    
+  }
+  
+  .team-logo {
+    width: 120px; /* Adjust width for better logo size */
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .player-list {
+    display: flex; /* Maintain flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap to multiple lines */
+    justify-content: space-around; /* Distribute items evenly with some spacing */
+    list-style: none; /* Remove default bullet points */
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .player-names {
+    display: flex; /* Allow flexbox for horizontal layout */
+     /* Wrap names if they overflow */
+     /* Distribute evenly with some spacing */
+     color: black;
+    text-align: center;
+    align-items: center;
+    /* Inherit or set desired paddings and borders from .player-list */
+  }
+  
+  .player-name {
+    /* Existing styles */
+    /* color: black; */
+    padding: 5px 10px;
+    margin: 5px;
+    /* font-size: 16px; */
+    text-align: center;
+    align-items: center;
+    width: 75%; /* Adjust width as needed for two columns */
+
+    font-family: Inter;
+    font-size: 24px;
+    line-height: 0.83;
+    color: #3f3f3f;
+    font-weight: 500;
+  }
+  
+  
+  
+  .vs {
+   /* Adjust font size for VS text */
+    margin-top: 40px;
+    margin-left: 45%;
+    font-family: Impact;
+    font-size: 80px;
+    line-height: 0.25;
+    color: #ffffff;
+    font-weight: 400;
+    padding-bottom: 250px; /*VVVVVV IMP PROPERTY, JUSTIFIES THE SPACE BETWEEN 'VS' AND THE 'BTN*/
+  }
+
+
+  
+  /* Button Styles */
+  
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 69px;
+    padding: 13px 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    /* padding-top: 50px; */
+    background-color: #467ce5;
+    font-family: Inter;
+    font-size: 26px;
+    line-height: 0.92;
+    color: #ffffff;
+    font-weight: 700;
+    width: 340px;
+    height: 51px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* New styles for generated players list */
+.generated-players {
+    display: none; /* Initially hide the element */
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    width: 20%;
+    margin-top: 2px; /* Add space between the button and the list */
+}
+/* Style for individual player names within the generated list */
+.generated-players .player-name {
+  padding: 5px 10px;
+  margin: 5px;
+  text-align: center;
+  align-items: center;
+  font-family: Inter;
+  font-size: 24px;
+  line-height: 0.83;
+  color: #3f3f3f;
+  font-weight: 500;
+}
+
+  
+  
+  
